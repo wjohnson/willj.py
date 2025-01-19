@@ -72,6 +72,7 @@ jobs:
     permissions:
       id-token: write
     steps:
+    - uses: actions/checkout@v2
     - name: Download all the dists
       uses: actions/download-artifact@v4
       with:
